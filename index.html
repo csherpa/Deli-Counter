@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KIKI DELI</title>
+		<link rel="stylesheet" type="text/css" href="deli.css">
+	</head>
+	<body>
+		<main>
+			<section>
+				<h1>KiKi Deli Counter</h1>
+				<div>
+
+					<input type="button" value="ReStart Counter" onclick="reloadPage()">
+				</div>
+
+			<form>
+				<h3>
+				Customer's name: <input type="text" name="Name" placeholder="name" id="CName" ><br>
+				Customer's order: <input type="text" name="Order" placeholder="order" id="COrder" >
+				</h3>
+				
+				<p><input type="button" value="Add Customer" onclick="addCustomer()">
+					
+				<input type="button" value="Customer Served" onclick="serveCustomer()"></p>
+			</form>
+				
+				<h4 id="noOrder"></h4>
+				
+				<table id="myTable" border="3">
+					<tr id="myRow">
+						<td>Postion</td>
+						<td>Name</td>
+						<td>Order</td>
+					</tr>
+					<tr id="myCell" >
+					<td colspan="3">The line is currently empty!!!</td>
+				</tr>
+				</table>	
+
+				<img src="deli.image">	
+
+			</section>
+		
+		</main>
+
+	</body>
+</html>
+
